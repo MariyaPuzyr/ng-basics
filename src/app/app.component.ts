@@ -6,6 +6,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  number = 0;
   title = 'ng-basics';
   rootName = 'testName';
   rootItems = ['Apples', 'Bananas', 'Cherries'];
@@ -14,5 +15,8 @@ export class AppComponent {
   onItemWasAdded(event) {
     this.rootItems.push(event);
     console.log(this.rootItems);
+  }
+  onIncrease() {
+    this.number = this.number * 2;
   }
 }

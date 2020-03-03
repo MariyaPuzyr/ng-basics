@@ -22,6 +22,10 @@
   <app-dashboard></app-dashboard>
 </div>
 
-<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
+<!--<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>-->
 <!--<app-cart [items]="rootItems" (itemChange)="onItemWasAdded($event)"></app-cart>-->
 <!--<app-user-detail></app-user-detail>-->
+
+
+<p>{{number}}</p>
+<button (click)="onIncrease()">Increase number</button>
