@@ -8,8 +8,11 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'ng-basics';
   rootName = 'testName';
+	rootItems = ['Apples', 'Bananas', 'Cherries'];
 
-  onNameChanged(newName) {
-    this.rootName = newName;
+
+  onItemWasAdded(event) {
+    this.rootItems.push(event);
+    console.log(this.rootItems);
   }
 }
