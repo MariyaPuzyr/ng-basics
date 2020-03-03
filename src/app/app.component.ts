@@ -8,7 +8,7 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'ng-basics';
   rootName = 'testName';
-	rootItems = ['Apples', 'Bananas', 'Cherries'];
+  rootItems = ['Apples', 'Bananas', 'Cherries'];
 
 
   onItemWasAdded(event) {
