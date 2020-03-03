@@ -1,10 +1,10 @@
-<div class="container">
+<!--<div class="container">
   <h1>Hello Angular</h1>
 
   <hr>
   <button (click)="toggleCards()">Toggle Cards</button>
   <hr>
-  <!--<app-form></app-form>-->
+  &lt;!&ndash;<app-form></app-form>&ndash;&gt;
   <div *ngIf="toggle; else noCards">
     <app-card
       *ngFor="let itemCard of cards"
@@ -15,12 +15,12 @@
   <ng-template #noCards>
     <p>Cards are hidden</p>
   </ng-template>
-</div>
+</div>-->
 <div class="" style="text-align: center">
   <h1>Welcome to {{title}}</h1>
 
   <app-dashboard></app-dashboard>
 </div>
 
-<!--<app-user></app-user>-->
+<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
 
