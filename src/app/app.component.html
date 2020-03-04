@@ -16,16 +16,24 @@
     <p>Cards are hidden</p>
   </ng-template>
 </div>-->
-<div class="" style="text-align: center">
+<!--<div class="" style="text-align: center">
   <h1>Welcome to {{title}}</h1>
 
   <app-dashboard></app-dashboard>
-</div>
+</div>-->
 
 <!--<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>-->
 <!--<app-cart [items]="rootItems" (itemChange)="onItemWasAdded($event)"></app-cart>-->
 <!--<app-user-detail></app-user-detail>-->
 
 
+<!--
 <p>{{number}}</p>
-<button (click)="onIncrease()" class="btn btn-dark">Increase number</button>
+<button (click)="onIncrease()" class="btn btn-dark">Increase number</button>-->
+<div class="container">
+  <div class="row">
+    <div class="col m-2">
+      <app-cart [items]="rootItems" (itemChange)="onItemWasAdded($event)"></app-cart>
+    </div>
+  </div>
+</div>
