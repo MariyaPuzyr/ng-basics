@@ -1,7 +1,7 @@
 <p>{{items}}</p>
 <input type="text" [(ngModel)]="newItem">
 <!--<input type="text" (input)="onAddCartBtn($event)" [value]="items">-->
-<button (click)="onItemChange()">Add Item</button>
+<button (click)="onItemChange()" class="btn" [ngClass]="{'btn-primary': newItem !== '', 'btn-default': newItem === ''}">>Add Item</button>
 
 <hr>
 
