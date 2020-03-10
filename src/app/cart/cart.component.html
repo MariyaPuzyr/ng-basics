@@ -3,6 +3,7 @@
 <!--<input type="text" (input)="onAddCartBtn($event)" [value]="items">-->
 <button (click)="onItemChange()" class="btn" [ngClass]="{'btn-primary': newItem !== '', 'btn-default': newItem === ''}">>Add Item</button>
 
+<p *ngIf="newItem === ''">Please enter a value!</p>
 <hr>
 
 <!-- show list of all the elements -->
